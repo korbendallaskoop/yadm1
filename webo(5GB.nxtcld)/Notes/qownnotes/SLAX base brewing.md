@@ -7,10 +7,7 @@ Generate Slax ISO image, adding specified modules
 Regular expression is used to exclude any existing path or file with -e regex
 
 Usage:
-
         /usr/bin/genslaxiso [[ -e regex ]] target.iso [[module.sb]] [[module.sb]] ...
-
-Examples:
 
         # to create Slax iso without chromium.sb module:
         /usr/bin/genslaxiso -e 'chromium' slax_without_chromium.iso

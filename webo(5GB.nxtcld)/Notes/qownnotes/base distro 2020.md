@@ -55,13 +55,15 @@ https://youtu.be/Q6I4nm69PLY
 ### base
 * redshift
 * sudo
-* variety/nitrogen
+* variety/nitrogen sync w nxtcloud
 * terminal w paste from keyboard
-* geany
+* geany + plugins
 * syncthing / nextcloud
 * screenshotr
 * thunar / ranger / nnn
 * fuzzy search and launcher
+* arandr, dualmonitor
+* 
 
 ### Laptopsk
 * brightness, 

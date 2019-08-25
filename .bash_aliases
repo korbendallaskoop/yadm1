@@ -83,6 +83,9 @@ alias fdl='fdisk -l' #
 alias fdd='fdisk /dev/sda' # 
 alias fd1='fdisk /dev/sda1' # 
 
+alias rbn='shutdown -r now' # 
+alias stp='shutdown +0' # 
+
 #-------------------------------------------------------------
 # i3 apps
 # https://github.com/jamielinux/bashmount
