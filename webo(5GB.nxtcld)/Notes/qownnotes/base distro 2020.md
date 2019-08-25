@@ -38,34 +38,6 @@ Flatpak just works great and much better than Snaps in my testing. My advice wou
 
 http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 
-## openbox 
-
-https://prahladyeri.com/blog/2016/02/minimal-debian-desktop-setup.html
-
-https://www.maketecheasier.com/configure-andcustomize-openbox/
-
-https://github.com/BunsenLabs/bunsen-netinstall
-
-https://duckduckgo.com/?q=minimal+debian+openbox&t=canonical&ia=videos
-
-https://addy-dclxvi.github.io/post/my-openbox/
-
-[Making Linux Look Good - Conky First-Time Setup - Live Stream](https://invidio.us/watch?v=xiWEjVc1834&listen=1)
-
-https://youtu.be/ekEDJjGmraw?t=194
-jdmenu, and using xfce launcher as 'dock' start menu
-weather forecast in st :)
-
-https://addy-dclxvi.github.io/post/my-openbox/
-https://www.youtube.com/watch?v=NMRxk60_r50
-LX menu
-dmenu
-lemonbar
-thunar
-ranger
-ncmpcp and audacious f music
-super t win decoration on/off
-            
 ## deb-spin
 
 fai 
@@ -89,6 +61,7 @@ https://youtu.be/Q6I4nm69PLY
 * syncthing / nextcloud
 * screenshotr
 * thunar / ranger / nnn
+* fuzzy search and launcher
 
 ### Laptopsk
 * brightness, 

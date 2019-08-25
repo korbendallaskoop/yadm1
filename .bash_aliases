@@ -73,10 +73,15 @@ alias sc='savechanges' 	# Save all filesystem modifications made during current 
 # alias ='rmsbdir' 		# Erase directory created by sb2dir
 # alias ='genslaxiso' 	# Generate Slax iso file with new modules, if running Slax from read-only media
 
-alias g2m="cd /run/initramfs/memory/data/slax/modules/" # 
+alias g2s="cd /run/initramfs/memory/data/slax/" # 
+# alias g2s="cd /run/initramfs/memory/data/slax/" # 
 
 alias sla='slax activate'
 alias sld='slax deactivate' # if any of the module files are open or used, deactivation will not be possible
+
+alias fdl='fdisk -l' # 
+alias fdd='fdisk /dev/sda' # 
+alias fd1='fdisk /dev/sda1' # 
 
 #-------------------------------------------------------------
 # i3 apps
