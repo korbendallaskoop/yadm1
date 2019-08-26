@@ -61,7 +61,7 @@ alias saac='sudo apt autoclean'
 alias saacd='sudo apt autoclean --dry-run' 
 
 #============================================================
-#  SLAX!!
+#  SLAX! you little beast
 
 alias sc='savechanges' 	# Save all filesystem modifications made during current session into a module file
 # alias ='sb2dir' 		# Convert a .sb module into a directory
