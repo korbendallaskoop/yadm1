@@ -244,7 +244,7 @@ alias gic='micro .config/i3/config'
 
 alias yac='yadm commit -a -m' 
 alias yap='yadm push' 
-alias yacp='yadm commit -a -m yayadmupdate; yadm push' # lazy push
+alias yacp='yadm commit -a -m yet_another_lazy_yadm_update; yadm push' # lazy push
 
 #-------------------------------------------------------------
 # xmodmap setup and testing
