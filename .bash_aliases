@@ -239,6 +239,16 @@ alias cfpp='/usr/bin/git --git-dir=$HOME/.cfp_bckp/ --work-tree=$HOME push'
 alias gic='micro .config/i3/config'
 
 #-------------------------------------------------------------
+# https://yadm.io/
+# git dotfile manager with alternate file sets and encryption
+
+alias yac='yadm commit -a -m' 
+alias yap='yadm push' 
+alias yacp='yadm commit -a -m yayadmupdate; yadm push' # lazy push
+
+#-------------------------------------------------------------
+#-------------------------------------------------------------
+# xmodmap setup and testing
 
 alias xv='xev | sed -ne '/^KeyPress/,/^$/p'' # from https://web.archive.org/web/20170825051821/http://madduck.net:80/docs/extending-xkb/
 
@@ -247,7 +257,7 @@ alias xmpm='xmodmap -pm'
 alias xmpke='xmodmap -pke'
 alias xmg='xmodmap -pke | grep'
 
-alias xmrz='xmodmap ~/.Xmodmap_razor_V500'
+alias xrz='xmodmap ~/.Xmodmap_razor_V500'
 alias xmhp='xmodmap ~/.Xmodmap_HP2760_broken_left_arrow_key'
 
 alias sxku='setxkbmap -layout us'
