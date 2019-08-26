@@ -30,7 +30,7 @@ alias upd='sudo eopkg up' #update solar system solus
 alias epchk='sudo eopkg check'
 
 #============================================================
-#  Debiansk
+# Debiansk
 
 alias sas='sudo apt search'
 alias sai='sudo apt install'
@@ -49,7 +49,7 @@ alias aptall='sudo apt update && apt -y upgrade && apt -y autoremove'
 alias sap='sudo apt purge'
 
 # autoremove orphaned packages, i.e. packages that used to be installed as an dependency, but aren't any longer
-alias sara='sudo apt autoremove'
+alias saar='sudo apt autoremove'
 
 # https://blog.sleeplessbeastie.eu/2017/10/09/how-to-clean-the-apt-cache/
 alias sac='sudo apt clean' # clear outs /var/cache/apt
@@ -70,11 +70,11 @@ alias sc='savechanges' 	# Save all filesystem modifications made during current 
 # alias ='genslaxiso' 	# Generate Slax iso file with new modules, if running Slax from read-only media
 
 alias 11="cd /run/initramfs/memory/data/slax/" # 
-alias 22="cd /dev/sda2' # " # 
-alias 33="cd /dev/sdb1' # " # 
+alias 22="cd /media/sda2' # " # the 2nd partition on the USB drive where /slax is on sda1
+alias 33="cd /media/sdb1' # " # .vdi used to sync/backup modules and files between SLAX test VMs in VirtualBox
 
 alias sla='slax activate'
-# alias sld1='slax activate' # 
+# alias sld1='slax activate /dev/   /  ' # for a specific module
 alias sld='slax deactivate' # if any of the module files are open or used, deactivation will not be possible
 
 alias fdl='fdisk -l' # 
@@ -246,7 +246,6 @@ alias yac='yadm commit -a -m'
 alias yap='yadm push' 
 alias yacp='yadm commit -a -m yayadmupdate; yadm push' # lazy push
 
-#-------------------------------------------------------------
 #-------------------------------------------------------------
 # xmodmap setup and testing
 
