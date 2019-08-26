@@ -42,17 +42,26 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 
 ### base
 * redshift (on non-x debian: 118 MB of additional disk space will be used.!)
+* http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/screenlight.html
 * sudo, tree
 * variety/nitrogen sync w nxtcloud
 * terminal w paste from keyboard
 * geany + plugins
-* syncthing / nextcloud
 * screenshotr
 * thunar / ranger / nnn
-* fuzzy search and launcher
+* launcher
+* conky / polybar resource monitor (ram, disk, battery, lan, sync)
 * arandr, dualmonitor
 * https://packages.debian.org/de/stretch/software-properties-gtk
-* 
+
+
+### doc prodsk
+* gnumeric
+* qownnotes / ...
+* Thunderbird
+* git, yadm sync setup
+* syncthing / nextcloud
+* fuzzy search  
 
 ### Laptopsk
 * brightness, 
@@ -64,15 +73,17 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 * gpodder
 * SMPlayer
 * gradio / stream library client
+* fuzzy search, hook to photo and video library
 
-### doc prodsk
-* gnumeric
-* qownnotes / ...
-* Thunderbird
+### videosk
+* kdenlive / openshot
+* youtube-dl
+* ffmpeg
+* makemkv
+* chromium m TV4ever
 
 ### www (container/module)
 * FF
-
 
 ### notes
 
