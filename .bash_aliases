@@ -83,6 +83,8 @@ alias fdl='fdisk -l' #
 alias fdd='fdisk /dev/sda' # 
 alias fd1='fdisk /dev/sda1' # 
 
+alias dfh='df -kTh'
+
 alias rbn='shutdown -r now' # 
 alias stp='shutdown +0' # 
 

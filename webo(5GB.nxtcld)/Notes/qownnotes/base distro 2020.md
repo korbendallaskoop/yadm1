@@ -38,23 +38,11 @@ Flatpak just works great and much better than Snaps in my testing. My advice wou
 
 http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 
-## deb-spin
-
-fai 
-
-https://linuxmusicians.com/viewtopic.php?f=19&p=92293#p92293
-
-https://sourceforge.net/u/ezos/profile/
-
-Debian 10 Buster Install & mkeznixOS - Make Your Own eznixOS https://youtu.be/Q6I4nm69PLY #myTube
-
-https://youtu.be/Q6I4nm69PLY
-
 ## app clusters
 
 ### base
-* redshift
-* sudo
+* redshift (on non-x debian: 118 MB of additional disk space will be used.!)
+* sudo, tree
 * variety/nitrogen sync w nxtcloud
 * terminal w paste from keyboard
 * geany + plugins
@@ -63,6 +51,7 @@ https://youtu.be/Q6I4nm69PLY
 * thunar / ranger / nnn
 * fuzzy search and launcher
 * arandr, dualmonitor
+* https://packages.debian.org/de/stretch/software-properties-gtk
 * 
 
 ### Laptopsk
