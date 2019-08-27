@@ -70,8 +70,8 @@ alias sc='savechanges' 	# Save all filesystem modifications made during current 
 # alias ='genslaxiso' 	# Generate Slax iso file with new modules, if running Slax from read-only media
 
 alias 11="cd /run/initramfs/memory/data/slax/" # 
-alias 22="cd /media/sda2' # " # the 2nd partition on the USB drive where /slax is on sda1
-alias 33="cd /media/sdb1' # " # .vdi used to sync/backup modules and files between SLAX test VMs in VirtualBox
+alias 22="cd /media/sda2" # the 2nd partition on the USB drive where /slax is on sda1
+alias 33="cd /media/sdb1" # .vdi used to sync/backup modules and files between SLAX test VMs in VirtualBox
 
 alias sla='slax activate'
 # alias sld1='slax activate /dev/   /  ' # for a specific module
@@ -240,7 +240,7 @@ alias gic='micro .config/i3/config'
 
 #-------------------------------------------------------------
 # https://yadm.io/
-# git dotfile manager with alternate file sets and encryption
+# git dotfile manager with bootstrap spawn, alternate file sets and encryption
 
 alias yac='yadm commit -a -m' 
 alias yap='yadm push' 
