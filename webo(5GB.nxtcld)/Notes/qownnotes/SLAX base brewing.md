@@ -69,14 +69,8 @@ also call cleanup.sh (again, pirated from Tomas and just updated to take a param
 
 The apt2sb.sh script takes one or more parameters which are names of packages to download and convert to a bundle.  The bundle is named whatever the name of the first package on the command line, and stored in "/".  If more than one parameter is on the command line, those packages are combined  into the same bundle.
 
-## google group spins
-
-https://groups.google.com/forum/#!topic/slax-users/5dCZbzfpAjA
-
 1. Pat's apt2sb is located in /usr/bin on the core sb module, instead of making a separate module for this, just so the script can be run by default.
 2. There is an extra module, 06-package-tools.sb, where Snapd, Flatpak and Synaptic are installed on it. It's not in the modules folder, but I figured it would be just as important as the other six modules.
-
-Jesse.
 
 ## known unknowns
 
@@ -89,4 +83,3 @@ I am not sure why.
 If you find out a fix for that, I am willing to add it to Slax, so please share it here
 
 I think that setting setuid bit for xorg binary is OK, so I'll add it in next Slax release. 
-

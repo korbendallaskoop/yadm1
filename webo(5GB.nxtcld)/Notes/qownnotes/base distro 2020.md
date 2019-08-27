@@ -45,15 +45,14 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 * http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/screenlight.html
 * sudo, tree
 * variety/nitrogen sync w nxtcloud
-* terminal w paste from keyboard
+* terminal w copy paste from keyboard, zoom, styling a $
 * geany + plugins
 * screenshotr
 * thunar / ranger / nnn
 * launcher
 * conky / polybar resource monitor (ram, disk, battery, lan, sync)
-* arandr, dualmonitor
+* arandr (27mb in naked slax openbox), dualmonitor
 * https://packages.debian.org/de/stretch/software-properties-gtk
-
 
 ### doc prodsk
 * gnumeric
