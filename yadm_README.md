@@ -65,6 +65,47 @@ if you want commits to your yadm repo to use a different author, you can configu
 Configuring these settings directly in the yadm repo will require you to configure it each time you clone the repo.
 
 
+# sync setup
+
+	yadm init 
+
+	yadm remote add solux https://github.com/korbendallaskoop/yadm1
+
+	yadm fetch solux
+
+root@slax:~# yadm branch -a
+  remotes/solux/master
+  remotes/solux/workinprogress
+
+root@slax:~# yadm checkout master
+	error: The following untracked working tree files would be overwritten by checkout:
+        .bashrc
+
+Please move or remove them before you switch branches.
+Aborting
+
+root@slax:~# yadm checkout master -f
+
+root@slax:~# yadm status
+On branch master
+Your branch is up-to-date with 'solux/master'.
+
+yadm gitconfig "user.email" "alternate-email@domain"
+yadm gitconfig "user.name"  "Alternate Name"
+
+yacp
+
+I like to thank the academy, agent, parents. God. 
+My agent whos a wonderful huiman being.
+If he could with us here today 
+he wouldn't be with us here today
+
+
+
+
+
+
+
 # Common Commands
 https://yadm.io/docs/common_commands
 
