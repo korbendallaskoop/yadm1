@@ -69,8 +69,9 @@ alias sc='savechanges' 	# Save all filesystem modifications made during current 
 # alias ='rmsbdir' 		# Erase directory created by sb2dir
 # alias ='genslaxiso' 	# Generate Slax iso file with new modules, if running Slax from read-only media
 
-alias 11="cd /run/initramfs/memory/data/slax/" # 
-alias 22="cd /media/sda2" # the 2nd partition on the USB drive where /slax is on sda1
+alias sx="cd /run/initramfs/memory/data/slax/" # 
+alias 11="cd /media/sda2" # the 2nd (ext4) partition on the USB drive where /slax is on sda1
+alias 22="cd /media/sda2" # the 3rd (NTFS) partition on the USB drive where /slax is on sda1
 alias 33="cd /media/sdb1" # .vdi used to sync/backup modules and files between SLAX test VMs in VirtualBox
 
 alias sla='slax activate'
