@@ -1,6 +1,8 @@
 SLAX base brewing
 =================
 
+11, sx  aliasses
+
 ## modularity
 
 Generate Slax ISO image, adding specified modules
@@ -16,29 +18,28 @@ Usage:
         /usr/bin/genslaxiso -e 'firmware|xorg|desktop|apps|chromium' slax_textmode.iso
 
 
-## Slax Linux 9.6.3 sb modules without compromise size
+## savechanges modules from fresh start
 
 denos installerer et 272k program i hhv persistent og fresh mode (til et nyt module)
 i persistence fylder apt cachen 120mb oveni
 https://youtu.be/lugCRiWXDE8?list=LLKZuHgOQok-F25Exg9mEjJg&t=290
 
-THE GOOD: apt allow us insttall packages easily...
-THE BAD : apt will require to add more meta-data
-THE UGLY: if not created as module will impact slax size
+	THE GOOD: apt allow us insttall packages easily...
+	THE BAD : apt will require to add more meta-data
+	THE UGLY: if not created as module will impact slax size
 
-Create 2 Clon VirtualBox Slax Default Install...
-
-VBox 1 Boot Slax in Persistant Mode
- apt install screenfetch
- screenfetch
- reboot
- df -h to check Distro Size...
-
-VBOx 2 Boot Slax in Fresh Start Mode
- apt install scfreenfetch
- save_changes /run/initramfs/memory/data/slax/modules/screenfetch.sb
- reboot
- df -h to check Distro Size...
+	Create 2 Clon VirtualBox Slax Default Install...
+	VBox 1 Boot Slax in Persistant Mode
+	 apt install screenfetch
+	 screenfetch
+	 reboot
+	 df -h to check Distro Size...
+	
+	VBOx 2 Boot Slax in Fresh Start Mode
+	 apt install scfreenfetch
+	 save_changes /run/initramfs/memory/data/slax/modules/screenfetch.sb
+	 reboot
+	 df -h to check Distro Size...
 
 Tomas confirms same question here
 https://groups.google.com/forum/#!searchin/slax-users/memory$2Fchanges%7Csort:date/slax-users/Foo6iMV3tQo/96Sbff8lCAAJ
@@ -51,10 +52,11 @@ to flush persistence files
 erase /run/initramfs/memory/changes/changes.dat 
 https://groups.google.com/forum/#!searchin/slax-users/memory$2Fchanges%7Csort:date/slax-users/Xc4RODhUsYg/nBL843H2AwAJ
 
-RTFM
-	If your device uses FAT filesystem, which is most common on USB flash drives, then all file modifications to Slax itself are saved into a special file changes.dat, which is created on your boot device in /slax/changes/ directory, and grows automatically in size up to 4GB. 
+### RTFM /slax/changes/
+
+	If your device uses FAT filesystem then all file modifications to Slax itself are saved into /slax/changes/changes.dat and grows automatically in size up to 4GB
 	
-	If your boot device uses a native Linux filesystem such as ext4, then the changed files are saved natively to /slax/changes/ directory without any need for intermediate changes.dat file. 
+	If your boot device uses a native Linux filesystem such as ext4, then the changed files are saved natively to /slax/changes/
 	
 	The file changes.dat is designed to work even on FAT filesystems, which are commonly used on most USB flash drives. Unfortunately FAT is limited to 4GB file size; for that reason, persistent changes can't grow more. In case you need to save more, please format your storage drive with some Linux filesystem such as EXT4 or BTRFS and install Slax to it. 
 	

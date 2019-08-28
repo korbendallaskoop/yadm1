@@ -41,52 +41,71 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 ## app clusters
 
 ### base
-* redshift (on non-x debian: 118 MB of additional disk space will be used.!)
-* http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/screenlight.html
-* sudo, tree
-* variety/nitrogen sync w nxtcloud
+* sudo, tree, micro (+5-600mb vmem vs nano!, not in base repos), mcedit rocks!
+* WM, keybindings, config
 * terminal w copy paste from keyboard, zoom, styling a $
+	* mate and xfce pulls 80mb, lxterminal 3.5mb.  
 * geany + plugins
 * screenshotr
 * thunar / ranger / nnn
-* launcher
-* conky / polybar resource monitor (ram, disk, battery, lan, sync)
-* arandr (27mb in naked slax openbox), dualmonitor
+* launcher, dmenu, rofi, 
+* lx/arandr (27mb in naked slax openbox), dualmonitor
 * https://packages.debian.org/de/stretch/software-properties-gtk
+
+### eyecandy cant let you go conveniently
+* redshift (on non-x debian: 118 MB of additional disk space will be used.!)
+* getstation m drive, reddit, masto
+* conky / polybar resource monitor (ram, disk, battery, lan, sync) 
+* variety/nitrogen sync w nxtcloud (variety @ 155MB just nu)
 
 ### doc prodsk
 * gnumeric
-* qownnotes / ...
-* Thunderbird
 * git, yadm sync setup
-* syncthing / nextcloud
+* syncthing / nextcloud / webdavs
+* sysimage tools, backup
 * fuzzy search  
+* atom
+	* https://github.com/lvancrayelynghe/ansible-ubuntu/commit/511d4574bb2250fc29a056fc3d39fe2bc5b21d52
+
+### daily bread www 
+* FF / 
+	* https://alternativeto.net/software/waterfox/
+	* http://www.seamonkey-project.org/
+	* https://www.gnu.org/software/gnuzilla/
+* Thunderbird
+* qownnotes / markdown notes editor w browser clipper
+ 
+### audio medialt
+* gpodder
+* SMPlayer
+* gradio / stream library client
+* fuzzy search, hook to photo and video library
+* jack, kxstudz
+* spotify, yt lib and pls
+
+### multimedialt
+* OBS
+* kdenlive / openshot
+* youtube-dl
+* ffmpeg
+* makemkv
+* chromium/brave m TV4ever
+	* https://alternativeto.net/software/ungoogled-chromium/
+	* https://alternativeto.net/software/iridium/
+* krita, mypaint
 
 ### Laptopsk
 * brightness, 
 * touchpad
 * Broadcom
 * suspend ?
+* touch
+* http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/screenlight.html
 
-### medialt
-* gpodder
-* SMPlayer
-* gradio / stream library client
-* fuzzy search, hook to photo and video library
-
-### videosk
-* kdenlive / openshot
-* youtube-dl
-* ffmpeg
-* makemkv
-* chromium m TV4ever
-
-### www (container/module)
-* FF
-
-### notes
+## notes
 
 https://flight-manual.atom.io/getting-started/sections/installing-atom/
+
 https://github.com/lvancrayelynghe/ansible-ubuntu/commit/511d4574bb2250fc29a056fc3d39fe2bc5b21d52
 
 User-space file system for Dropbox
@@ -94,12 +113,11 @@ https://github.com/rianhunter/dbxfs
 
 https://alternativeto.net/software/miro/?license=opensource&platform=linux
 
-### sync methods
-
+## sync methods
 git koster 75 mb, 
-syncthing 12mb (+30-40mb RAM) og own/nextcloud gui (+20-40mb RAM)
+syncthing 12mb (+30-40mb RAM) og own/nextcloud gui (+20-40mb RAM, elr lige nu 700!, set paa 1500 - nextcloudcmd 800mb)
 
-### browser
+## browser
 
 firefox pulls 240 mb fra debian repos...d kalder paa en container
 
