@@ -254,6 +254,9 @@ alias yft='yadm fetch'
 alias ypl='yadm pull' 
 alias yck='yadm checkout' 
 
+alias yr='yadm remote -v' 
+alias yb='yadm branch' 
+
 alias yac='yadm commit -a -m' 
 alias yap='yadm push' 
 alias yacp='yadm commit -a -m yet_another_lazy_yadm_update; yadm push' # lazy push
