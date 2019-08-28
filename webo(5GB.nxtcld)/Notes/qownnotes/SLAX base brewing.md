@@ -31,9 +31,12 @@ om ikke ansible (local) sa denos e.a.
 		* ryd op i solux/home 
 		* ryd op paa /eSATA, flyt mediearkivet til /sda
 		* syncthing dem indtil de er 1:1
-		* mount webdavs til g og onedrive til dox & pix (space..) og sync dem fra /slax
+		* mount webdavs til g og onedrive til dox (23gb) & pix (space..) og sync dem fra /slax
 
 	* 	base distro bundles amok
+
+BLOG IT UP BOY
+github markdown push push push
 	
 ## bundle script
 https://groups.google.com/forum/#!topic/slax-users/5dCZbzfpAjA
