@@ -25,6 +25,7 @@ om ikke ansible (local) sa denos e.a.
 		* can it be edited from slax/boot/....cfg and point to /sda2 (and later on to wherever fits)
 	
 	* yadm og nextcloud / syncthing pa plads for pokker
+		* re-sync /webo fra solux
 		* syncthing nok nemmest til shared /home, /data, (vs. 1:1 mirror paa nxtcloud server somewhere)
 		* lad /slax mounte space paa /eSATA/
 		* ryd op i solux/home 
