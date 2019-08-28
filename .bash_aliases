@@ -85,15 +85,15 @@ alias fda2='fdisk /dev/sda2' #
 alias fdb='fdisk /dev/sdb' # 
 alias fdb1='fdisk /dev/sdb1' # 
 
-alias dfh='df -kTh'
-
 alias rbn='reboot' # 
 alias stp='shutdown +0' # 
 
 #-------------------------------------------------------------
-# i3 apps
-# https://github.com/jamielinux/bashmount
+# i3 
 
+alias gic='micro .config/i3/config'
+
+# https://github.com/jamielinux/bashmount
 alias bm='bashmount'
 alias nb='newsboat'
 
@@ -222,6 +222,9 @@ alias cfgg='/usr/bin/git --git-dir=$HOME/.cfg_bckp/ --work-tree=$HOME ls-tree -t
 alias cfgc='/usr/bin/git --git-dir=$HOME/.cfg_bckp/ --work-tree=$HOME commit -a -m'
 # push
 alias cfgp='/usr/bin/git --git-dir=$HOME/.cfg_bckp/ --work-tree=$HOME push'
+# quick push w. generic 'minor_update' message
+alias cfgq='/usr/bin/git --git-dir=$HOME/.cfg_bckp/ --work-tree=$HOME commit -a -m minor_update; cfg push' 
+
 
 ####### .cfp_bckp private dotfiles backup repo
 
@@ -237,11 +240,19 @@ alias cfpg='/usr/bin/git --git-dir=$HOME/.cfp_bckp/ --work-tree=$HOME ls-tree -t
 alias cfpc='/usr/bin/git --git-dir=$HOME/.cfp_bckp/ --work-tree=$HOME commit -a -m'
 alias cfpp='/usr/bin/git --git-dir=$HOME/.cfp_bckp/ --work-tree=$HOME push'
 
-alias gic='micro .config/i3/config'
+# quick push w. generic 'minor_update' message
+alias cfpq='/usr/bin/git --git-dir=$HOME/.cfg_bckp/ --work-tree=$HOME commit -a -m minor_update; cfp push' 
 
 #-------------------------------------------------------------
 # https://yadm.io/
 # git dotfile manager with bootstrap spawn, alternate file sets and encryption
+
+alias y='yadm' # that's y
+alias yas='yadm status'
+
+alias yft='yadm fetch' 
+alias ypl='yadm pull' 
+alias yck='yadm checkout' 
 
 alias yac='yadm commit -a -m' 
 alias yap='yadm push' 
@@ -257,7 +268,7 @@ alias xmpm='xmodmap -pm'
 alias xmpke='xmodmap -pke'
 alias xmg='xmodmap -pke | grep'
 
-alias xrz='xmodmap ~/.Xmodmap_razor_V500'
+alias zxc='xmodmap ~/.Xmodmap_razor_V500'
 alias xmhp='xmodmap ~/.Xmodmap_HP2760_broken_left_arrow_key'
 
 alias sxku='setxkbmap -layout us'
