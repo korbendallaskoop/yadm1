@@ -13,7 +13,7 @@ fat trim og re-build er ikke kritisk endnu, m 12 gb RAM.
 
 brug ikke vbox til .sb setups
 go live i stedet, boot til ram og coast, just coast
-chroot til solux for nextcl/synct setup derfra
+chroot (?) til solux for nextcl/synct setup derfra
 
 find og choose den absolut enklest config script setup derude
 om ikke ansible (local) sa denos e.a.
@@ -37,6 +37,13 @@ om ikke ansible (local) sa denos e.a.
 
 BLOG IT UP BOY
 github markdown push push push
+
+I'm not really a distrohopper it's just the most clickbaity flag to wave at this point. Years ago, when I first got into Linux and a public lamp server going, I kept some basic notes on shell and system commands in the most [dokuwiki(https://www.dokuwiki.org/dokuwiki) which became a good diary and overview for keeping a mindmap of what goes where.
+
+Now this is a likewise notes to self/world to get started and better at writing documentation and using a github markdown publisher backend.
+
+
+	
 	
 ## bundle script
 https://groups.google.com/forum/#!topic/slax-users/5dCZbzfpAjA
@@ -63,6 +70,17 @@ If you find out a fix for that, I am willing to add it to Slax, so please share 
 I think that setting setuid bit for xorg binary is OK, so I'll add it in next Slax release. 
 
 ## ref
+
+the /slax/modules numbering is actually
+
+01-firmware.sb is 37mb
+Inside it /lib/firmware/ is 112mb (uncompressed)
+
+I have a broadcom 4313 wifi nic, the /lib/firmware/brcm/ folder is 12mb and contains binaries for 10-15 other models. And there might be other crucial drivers in /lib/firmware/ for other hardware besides wifi (?).
+
+Anyway, in the hunt for minimalism, wouldn't it be possible to run a hardware probe on the system, determine which drivers are needed and pack them in a smaller bundle or into 01-core.sb?
+
+
 
 ### savechanges modules from fresh start
 
