@@ -1,8 +1,6 @@
 SLAX base brewing
-=================
-multiplaxs
-phloston phlax
-phlax
+-
+multiplaxs phloston phlax 
 
 11, sx  aliasses
 
@@ -18,9 +16,15 @@ chroot (?) til solux for nextcl/synct setup derfra
 find og choose den absolut enklest config script setup derude
 om ikke ansible (local) sa denos e.a.
 
+
 	* openbox setup fra bunsen 
+		* hvis repos er gpg non-certd pt
 	* i3 setup
 	* edit root og guest user, login manager
+	* screen reso persist
+		* or xrandr at boot men hvordan prober den sa reso
+		* elr savechanges raw, https://groups.google.com/d/msg/slax-users/1V7yMO4zuRE/pMla4UsDBQAJ
+
 	* prepare sda2 and bootloader from usb
 		* can it be edited from slax/boot/....cfg and point to /sda2 (and later on to wherever fits)
 	
@@ -34,7 +38,11 @@ om ikke ansible (local) sa denos e.a.
 		* mount webdavs til g og onedrive til dox (23gb) & pix (space..) og sync dem fra /slax
 
 	* 	base distro bundles amok
+	* 	split firmware modulet (37mb) ud ift. required host hardware
+		* 	[apt install firmware-b43legacy-installer](https://groups.google.com/d/msg/slax-users/1V7yMO4zuRE/pMla4UsDBQAJ)
+	* 	
 
+## slax notes to self.world
 BLOG IT UP BOY
 github markdown push push push
 
@@ -43,9 +51,40 @@ I'm not really a distrohopper it's just the most clickbaity flag to wave at this
 Now this is a likewise notes to self/world to get started and better at writing documentation and using a github markdown publisher backend.
 
 
+## build	
 	
+
+### livekit
+
+On Tuesday, August 27, 2019 at 1:36:21 AM UTC+2, Korben of Slaxsen wrote:
+https://groups.google.com/forum/#!starred/slax-users/Ko4rh5xMk3k
+
+    On Friday, December 29, 2017 at 3:45:34 PM UTC+1, Tomas M wrote:
+
+        Well, I build Slax this way:
+
+        1) install Debian from minimal netinst ISO to hard disk
+        2) boot it
+        3) download and extract liveKit to /tmp
+        4) cd /tmp/linux-live-master/Slax/debian
+        5) ./build
+        6) see /tmp for scripts to make ISO 
+
+    The current debian-10.0.0-amd64-netinst.iso is 350mb.
+    Your slax-64bit-9.9.1 iso, incl. 01-core.sb, 02-xorg.sb and 03-desktop.sb, is 145m.
+
+    I haven't (yet) found any step-by-step guides on what to trim to reach the same minimalixm and isn't linux savvy enought to parse:
+
+    Remove all unnecessary files, to make your Live Linux system as small as possible (this step is optional). It is recommended to remove udev's persistent net rules and other settings of your distro, which may prevent it from functioning correctly on different hardware (from https://www.linux-live.org)
+
+    Would it be possible for you to share a pre ./build diff file, cookbook or disk image?
+
+    I assume it would be more elegant* to pick up from there rather than re-mastering the .sb bundles from your SLAX iso release. And make it convenient for us to automate and test builds with bash or ansible or config tools.
+
 	
-## bundle script
+## config
+
+### bundle script
 https://groups.google.com/forum/#!topic/slax-users/5dCZbzfpAjA
 
 my latest version of apt2sb.sh, mostly provided originally by Tomas.  
@@ -80,6 +119,21 @@ I have a broadcom 4313 wifi nic, the /lib/firmware/brcm/ folder is 12mb and cont
 
 Anyway, in the hunt for minimalism, wouldn't it be possible to run a hardware probe on the system, determine which drivers are needed and pack them in a smaller bundle or into 01-core.sb?
 
+the /slax/modules numbering is actually
+
+01-firmware.sb is 37mb
+
+Inside it /lib/firmware/ is 112mb (uncompressed)
+
+
+I have a broadcom 4313 wifi nic, the /lib/firmware/brcm/ folder is 12mb and contains binaries for 10-15 other models. And there might be other crucial drivers in /lib/firmware/ for other hardware besides wifi (?).
+
+
+Anyway, in the hunt for minimalism, wouldn't it be possible to run a hardware probe on the system, determine which drivers are needed and pack them in a smaller bundle or into 01-core.sb?
+
+
+-> apt install firmware-b43-installer  ( for my laptop )
+or -> apt install firmware-b43legacy-installer
 
 
 ### savechanges modules from fresh start
@@ -135,3 +189,8 @@ https://groups.google.com/forum/#!searchin/slax-users/memory$2Fchanges%7Csort:da
 	
 	Slax will be able to save changes natively and will be limited only by the actual capacity of your device. 
 https://www.slax.org/starting.php
+
+### forks
+https://sourceforge.net/projects/alphaos/files/
+ alphaos_17.3-20160215-x86_64_vbox.iso 	2016-02-29
+ arch base
