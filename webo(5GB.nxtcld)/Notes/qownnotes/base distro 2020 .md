@@ -52,6 +52,18 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 * launcher, dmenu, rofi, 
 * lx/arandr (27mb in naked os openbox), dualmonitor
 * https://packages.debian.org/de/stretch/software-properties-gtk
+* https://extensions.gnome.org/extension/1082/cpufreq/
+* https://code.google.com/archive/p/i7z/
+* http://konkor.github.io/cpufreq/install/ 
+* https://github.com/bulletmark/libinput-gestures
+
+### container base
+* https://flathub.org/apps/details/org.gnome.Boxes
+* vbox
+* ansible, vagrant
+* lxc (lxd w systemd)
+* https://flatpak.org/setup
+
 
 ### eyecandy cant let you go conveniently
 * redshift (on non-x debian: 118 MB of additional disk space will be used.!)
@@ -63,6 +75,7 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 * gnumeric
 * git, yadm sync setup
 * syncthing / nextcloud / webdavs
+	* https://www.thefanclub.co.za/overgrive Price: $4.99
 * sysimage tools, backup
 * fuzzy search  
 * atom
@@ -102,6 +115,9 @@ http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/persistence.html
 * suspend ?
 * touch
 * http://download.tuxfamily.org/antix/docs-antiX-17/FAQ/screenlight.html
+
+### known unknowns
+* kobo sync https://www.reddit.com/r/linuxquestions/comments/cy1x9b/any_alternative_to_calibre_as_a_library_manager/
 
 ## notes
 

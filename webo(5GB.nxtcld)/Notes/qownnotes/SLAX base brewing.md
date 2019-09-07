@@ -36,6 +36,7 @@ om ikke ansible (local) sa denos e.a.
 		* ryd op paa /eSATA, flyt mediearkivet til /sda
 		* syncthing dem indtil de er 1:1
 		* mount webdavs til g og onedrive til dox (23gb) & pix (space..) og sync dem fra /slax
+			* https://linuxnewbieguide.org/onedrive-client-linux/
 
 	* 	base distro bundles amok
 	* 	split firmware modulet (37mb) ud ift. required host hardware
