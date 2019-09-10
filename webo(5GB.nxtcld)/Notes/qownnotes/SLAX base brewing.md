@@ -16,7 +16,6 @@ chroot (?) til solux for nextcl/synct setup derfra
 find og choose den absolut enklest config script setup derude
 om ikke ansible (local) sa denos e.a.
 
-
 	* openbox setup fra bunsen 
 		* hvis repos er gpg non-certd pt
 	* i3 setup
@@ -89,7 +88,7 @@ https://groups.google.com/forum/#!starred/slax-users/Ko4rh5xMk3k
 https://groups.google.com/forum/#!topic/slax-users/5dCZbzfpAjA
 
 my latest version of apt2sb.sh, mostly provided originally by Tomas.  
-builds bundles based just on the standard 0* bundles from Slax.  
+	builds bundles based just on the standard 0* bundles from Slax.  
 also call cleanup.sh (again, pirated from Tomas and just updated to take a parameter for the starting directory) but that is optional.  I think it saves a little space.
 
 The apt2sb.sh script takes one or more parameters which are names of packages to download and convert to a bundle.  The bundle is named whatever the name of the first package on the command line, and stored in "/".  If more than one parameter is on the command line, those packages are combined  into the same bundle.
